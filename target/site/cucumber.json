@@ -1,0 +1,374 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 10379000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "homepage is opened",
+            "match": {
+              "location": "stepdefs.HomePageSteps.homepage_is_opened()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 702000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I open Register page",
+            "match": {
+              "location": "stepdefs.HomePageSteps.i_open_register_page()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-01-31T05:10:10.952Z",
+        "line": 9,
+        "name": "Blank register form",
+        "description": "",
+        "id": "register;blank-register-form",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 798000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I should see Continue button is disabled",
+            "match": {
+              "location": "stepdefs.RegisterPageSteps.i_should_see_continue_button_is_disabled()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@aspire"
+          },
+          {
+            "name": "@register"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1811000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "homepage is opened",
+            "match": {
+              "location": "stepdefs.HomePageSteps.homepage_is_opened()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 702000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I open Register page",
+            "match": {
+              "location": "stepdefs.HomePageSteps.i_open_register_page()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-01-31T05:10:22.938Z",
+        "line": 18,
+        "name": "Invalid full_name",
+        "description": "",
+        "id": "register;invalid-\u003ccase\u003e;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 984000000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I input full_name with 1",
+            "match": {
+              "arguments": [
+                {
+                  "val": "full_name",
+                  "offset": 8
+                },
+                {
+                  "val": "1",
+                  "offset": 23
+                }
+              ],
+              "location": "stepdefs.RegisterPageSteps.i_input_txtbx_with_something(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 613000000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I should see full_name error Full Name as per ID must be at least 2 characters.",
+            "match": {
+              "arguments": [
+                {
+                  "val": "full_name",
+                  "offset": 13
+                },
+                {
+                  "val": "Full Name as per ID must be at least 2 characters.",
+                  "offset": 29
+                }
+              ],
+              "location": "stepdefs.RegisterPageSteps.i_should_see_txtbx_error_something(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@aspire"
+          },
+          {
+            "name": "@register"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1890000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "homepage is opened",
+            "match": {
+              "location": "stepdefs.HomePageSteps.homepage_is_opened()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 707000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I open Register page",
+            "match": {
+              "location": "stepdefs.HomePageSteps.i_open_register_page()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-01-31T05:10:27.059Z",
+        "line": 19,
+        "name": "Invalid email",
+        "description": "",
+        "id": "register;invalid-\u003ccase\u003e;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1482000000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I input email with @",
+            "match": {
+              "arguments": [
+                {
+                  "val": "email",
+                  "offset": 8
+                },
+                {
+                  "val": "@",
+                  "offset": 19
+                }
+              ],
+              "location": "stepdefs.RegisterPageSteps.i_input_txtbx_with_something(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 609000000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I should see email error Email address must be a valid email address.",
+            "match": {
+              "arguments": [
+                {
+                  "val": "email",
+                  "offset": 13
+                },
+                {
+                  "val": "Email address must be a valid email address.",
+                  "offset": 25
+                }
+              ],
+              "location": "stepdefs.RegisterPageSteps.i_should_see_txtbx_error_something(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@aspire"
+          },
+          {
+            "name": "@register"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1639000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "homepage is opened",
+            "match": {
+              "location": "stepdefs.HomePageSteps.homepage_is_opened()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 631000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I open Register page",
+            "match": {
+              "location": "stepdefs.HomePageSteps.i_open_register_page()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-01-31T05:10:31.762Z",
+        "line": 20,
+        "name": "Invalid phone",
+        "description": "",
+        "id": "register;invalid-\u003ccase\u003e;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1369000000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I input phone with 1234567",
+            "match": {
+              "arguments": [
+                {
+                  "val": "phone",
+                  "offset": 8
+                },
+                {
+                  "val": "1234567",
+                  "offset": 19
+                }
+              ],
+              "location": "stepdefs.RegisterPageSteps.i_input_txtbx_with_something(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 604000000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I should see phone error Phone number must be at least 11 characters.",
+            "match": {
+              "arguments": [
+                {
+                  "val": "phone",
+                  "offset": 13
+                },
+                {
+                  "val": "Phone number must be at least 11 characters.",
+                  "offset": 25
+                }
+              ],
+              "location": "stepdefs.RegisterPageSteps.i_should_see_txtbx_error_something(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@aspire"
+          },
+          {
+            "name": "@register"
+          }
+        ]
+      }
+    ],
+    "name": "Register",
+    "description": "",
+    "id": "register",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/Register.feature",
+    "tags": [
+      {
+        "name": "@aspire",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

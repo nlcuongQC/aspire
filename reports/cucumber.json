@@ -1,0 +1,768 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 13938000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "homepage is opened",
+            "match": {
+              "location": "stepdefs.HomePageSteps.homepage_is_opened()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 616000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I open Register page",
+            "match": {
+              "location": "stepdefs.HomePageSteps.i_open_register_page()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-01-31T14:28:16.252Z",
+        "line": 9,
+        "name": "Blank register form",
+        "description": "",
+        "id": "register;blank-register-form",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 230000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I should see Continue button is disabled",
+            "match": {
+              "location": "stepdefs.RegisterPageSteps.i_should_see_continue_button_is_disabled()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@aspire"
+          },
+          {
+            "name": "@register"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1346000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "homepage is opened",
+            "match": {
+              "location": "stepdefs.HomePageSteps.homepage_is_opened()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 599000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I open Register page",
+            "match": {
+              "location": "stepdefs.HomePageSteps.i_open_register_page()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-01-31T14:28:31.171Z",
+        "line": 18,
+        "name": "Invalid full_name",
+        "description": "",
+        "id": "register;invalid-\u003ccase\u003e;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 945000000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I input full_name with 1",
+            "match": {
+              "arguments": [
+                {
+                  "val": "full_name",
+                  "offset": 8
+                },
+                {
+                  "val": "1",
+                  "offset": 23
+                }
+              ],
+              "location": "stepdefs.RegisterPageSteps.i_input_txtbx_with_something(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 581000000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I should see full_name error Full Name as per ID must be at least 2 characters.",
+            "match": {
+              "arguments": [
+                {
+                  "val": "full_name",
+                  "offset": 13
+                },
+                {
+                  "val": "Full Name as per ID must be at least 2 characters.",
+                  "offset": 29
+                }
+              ],
+              "location": "stepdefs.RegisterPageSteps.i_should_see_txtbx_error_something(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@aspire"
+          },
+          {
+            "name": "@register"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1560000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "homepage is opened",
+            "match": {
+              "location": "stepdefs.HomePageSteps.homepage_is_opened()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 620000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I open Register page",
+            "match": {
+              "location": "stepdefs.HomePageSteps.i_open_register_page()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-01-31T14:28:34.650Z",
+        "line": 19,
+        "name": "Invalid email",
+        "description": "",
+        "id": "register;invalid-\u003ccase\u003e;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 848000000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I input email with @",
+            "match": {
+              "arguments": [
+                {
+                  "val": "email",
+                  "offset": 8
+                },
+                {
+                  "val": "@",
+                  "offset": 19
+                }
+              ],
+              "location": "stepdefs.RegisterPageSteps.i_input_txtbx_with_something(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 586000000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I should see email error Email address must be a valid email address.",
+            "match": {
+              "arguments": [
+                {
+                  "val": "email",
+                  "offset": 13
+                },
+                {
+                  "val": "Email address must be a valid email address.",
+                  "offset": 25
+                }
+              ],
+              "location": "stepdefs.RegisterPageSteps.i_should_see_txtbx_error_something(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@aspire"
+          },
+          {
+            "name": "@register"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1296000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "homepage is opened",
+            "match": {
+              "location": "stepdefs.HomePageSteps.homepage_is_opened()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 601000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I open Register page",
+            "match": {
+              "location": "stepdefs.HomePageSteps.i_open_register_page()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-01-31T14:28:38.274Z",
+        "line": 20,
+        "name": "Invalid phone",
+        "description": "",
+        "id": "register;invalid-\u003ccase\u003e;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 781000000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I input phone with 1234567",
+            "match": {
+              "arguments": [
+                {
+                  "val": "phone",
+                  "offset": 8
+                },
+                {
+                  "val": "1234567",
+                  "offset": 19
+                }
+              ],
+              "location": "stepdefs.RegisterPageSteps.i_input_txtbx_with_something(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 583000000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I should see phone error Phone number must be at least 11 characters.",
+            "match": {
+              "arguments": [
+                {
+                  "val": "phone",
+                  "offset": 13
+                },
+                {
+                  "val": "Phone number must be at least 11 characters.",
+                  "offset": 25
+                }
+              ],
+              "location": "stepdefs.RegisterPageSteps.i_should_see_txtbx_error_something(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@aspire"
+          },
+          {
+            "name": "@register"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1369000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "homepage is opened",
+            "match": {
+              "location": "stepdefs.HomePageSteps.homepage_is_opened()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 600000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I open Register page",
+            "match": {
+              "location": "stepdefs.HomePageSteps.i_open_register_page()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-01-31T14:28:41.545Z",
+        "line": 23,
+        "name": "Valid data with mobile OTP",
+        "description": "",
+        "id": "register;valid-data-with-mobile-otp",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2939000000,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "I fill register form with valid data",
+            "match": {
+              "location": "stepdefs.RegisterPageSteps.i_fill_register_form()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 643000000,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "I click to Continue button",
+            "match": {
+              "location": "stepdefs.RegisterPageSteps.i_click_continue_btn()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4079000000,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "Mobile OTP page is opened",
+            "match": {
+              "location": "stepdefs.MobileOTPPageSteps.mobile_otp_page_is_opened()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 645000000,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "I input OTP",
+            "match": {
+              "location": "stepdefs.MobileOTPPageSteps.i_input_otp()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3210000000,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "I should see Register complete page is opened",
+            "match": {
+              "location": "stepdefs.RegisterCompletePageSteps.i_should_see_register_complete_page_is_opened()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 587000000,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "I click to Continue button in complete page",
+            "match": {
+              "location": "stepdefs.RegisterCompletePageSteps.i_click_to_continue_button_in_complete_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4869000000,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "Incorporate selector page is opened",
+            "match": {
+              "location": "stepdefs.IncorporateSelectorPageSteps.incorporate_selector_page_is_opened()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 581000000,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "I click to registered business continue button",
+            "match": {
+              "location": "stepdefs.IncorporateSelectorPageSteps.i_click_to_registered_business_continue_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3680000000,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "Register select method page is opened",
+            "match": {
+              "location": "stepdefs.RegisterSelectMethodPageSteps.register_select_method_page_is_opened()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 628000000,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "I click to Standard registration Get started button",
+            "match": {
+              "location": "stepdefs.RegisterSelectMethodPageSteps.i_click_to_standard_registration_get_started_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 573000000,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "Personal details page is opened",
+            "match": {
+              "location": "stepdefs.PersonalDetailsPageSteps.personal_details_page_is_opened()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 624000000,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "I click to Get started button in Person details",
+            "match": {
+              "location": "stepdefs.PersonalDetailsPageSteps.i_click_to_get_started_button_in_person_details()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1509000000,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "I choose date of birth",
+            "match": {
+              "location": "stepdefs.PersonalDetailsPageSteps.i_choose_date_of_birth()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 16062000000,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "I choose Nationality ddl is Albania",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Albania",
+                  "offset": 28
+                }
+              ],
+              "location": "stepdefs.PersonalDetailsPageSteps.i_choose_nationality_ddl_is(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 15754000000,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "I choose Gender ddl is Male",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Male",
+                  "offset": 23
+                }
+              ],
+              "location": "stepdefs.PersonalDetailsPageSteps.i_choose_gender_ddl_is_male(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1286000000,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "I choose interested products",
+            "match": {
+              "location": "stepdefs.PersonalDetailsPageSteps.i_choose_interested_products()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 641000000,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "I click Submit Person details button",
+            "match": {
+              "location": "stepdefs.PersonalDetailsPageSteps.i_click_submit_person_details_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3854000000,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "I input OTP",
+            "match": {
+              "location": "stepdefs.MobileOTPPageSteps.i_input_otp()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3263000000,
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "Business Details is opened",
+            "match": {
+              "location": "stepdefs.BusinessDetailsPageSteps.business_detail_is_opened()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 610000000,
+              "status": "passed"
+            },
+            "line": 43,
+            "name": "I click to Get started button in Business details",
+            "match": {
+              "location": "stepdefs.BusinessDetailsPageSteps.i_click_to_get_started_button_in_business_details()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 732000000,
+              "status": "passed"
+            },
+            "line": 44,
+            "name": "I input Business name",
+            "match": {
+              "location": "stepdefs.BusinessDetailsPageSteps.i_input_business_name()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 402000000,
+              "status": "passed"
+            },
+            "line": 45,
+            "name": "I choose registration type dll Sole proprietorship",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Sole proprietorship",
+                  "offset": 31
+                }
+              ],
+              "location": "stepdefs.BusinessDetailsPageSteps.i_choose_registration_type_dll(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 693000000,
+              "status": "passed"
+            },
+            "line": 46,
+            "name": "I input UEN",
+            "match": {
+              "location": "stepdefs.BusinessDetailsPageSteps.i_input_uen()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 865000000,
+              "status": "passed"
+            },
+            "line": 47,
+            "name": "I choose Industry Manufacturing",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Manufacturing",
+                  "offset": 18
+                }
+              ],
+              "location": "stepdefs.BusinessDetailsPageSteps.i_choose_industry(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1027000000,
+              "status": "passed"
+            },
+            "line": 48,
+            "name": "I choose Sub Industry Chemicals",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Chemicals",
+                  "offset": 22
+                }
+              ],
+              "location": "stepdefs.BusinessDetailsPageSteps.i_choose_sub_industry(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 614000000,
+              "status": "passed"
+            },
+            "line": 49,
+            "name": "I click Submit Business details button",
+            "match": {
+              "location": "stepdefs.BusinessDetailsPageSteps.i_click_submit_business_details_button()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@aspire"
+          },
+          {
+            "name": "@register"
+          }
+        ]
+      }
+    ],
+    "name": "Register",
+    "description": "",
+    "id": "register",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/Register.feature",
+    "tags": [
+      {
+        "name": "@aspire",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

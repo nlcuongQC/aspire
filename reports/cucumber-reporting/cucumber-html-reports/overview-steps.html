@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="js/Chart.min.js"></script>
+<script type="text/javascript" src="js/moment.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+  
+<title>Cucumber Reports (no 1) - Steps Overview</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation"     class="active" ><a href="overview-steps.html">Steps</a></li>
+                <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+    
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+              <th>Number</th>
+            <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>Aspire</td>
+              <td>1</td>
+            <td>31 Jan 2021, 21:29</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+      </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Steps Statistics</h2>
+          <p>The following graph shows step statistics for this build. Below list is based on results.
+ step does not provide information about result then is not listed below.
+ Additionally @Before and @After are not counted because they are part of the scenarios, not steps.</p>
+      </div>
+</div>
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table id="tablesorter" class="stats-table table-hover">
+
+        <thead>
+          <tr class="header">
+            <th>Implementation</th>
+            <th>Occurrences</th>
+            <th>Duration</th>
+            <th>Average</th>
+            <th>Ratio</th>
+          </tr>
+        </thead>
+
+        <tbody>
+                      <tr>
+              <td class="location">stepdefs.BusinessDetailsPageSteps.business_detail_is_opened()</td>
+              <td>1</td>
+              <td class="duration" data-value="3263000000">3s 263ms</td>
+              <td class="duration" data-value="3263000000">3s 263ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepdefs.BusinessDetailsPageSteps.i_choose_industry(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="865000000">865ms</td>
+              <td class="duration" data-value="865000000">865ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepdefs.BusinessDetailsPageSteps.i_choose_registration_type_dll(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="402000000">402ms</td>
+              <td class="duration" data-value="402000000">402ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepdefs.BusinessDetailsPageSteps.i_choose_sub_industry(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="1027000000">1s 027ms</td>
+              <td class="duration" data-value="1027000000">1s 027ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepdefs.BusinessDetailsPageSteps.i_click_submit_business_details_button()</td>
+              <td>1</td>
+              <td class="duration" data-value="614000000">614ms</td>
+              <td class="duration" data-value="614000000">614ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepdefs.BusinessDetailsPageSteps.i_click_to_get_started_button_in_business_details()</td>
+              <td>1</td>
+              <td class="duration" data-value="610000000">610ms</td>
+              <td class="duration" data-value="610000000">610ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepdefs.BusinessDetailsPageSteps.i_input_business_name()</td>
+              <td>1</td>
+              <td class="duration" data-value="732000000">732ms</td>
+              <td class="duration" data-value="732000000">732ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepdefs.BusinessDetailsPageSteps.i_input_uen()</td>
+              <td>1</td>
+              <td class="duration" data-value="693000000">693ms</td>
+              <td class="duration" data-value="693000000">693ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepdefs.HomePageSteps.homepage_is_opened()</td>
+              <td>5</td>
+              <td class="duration" data-value="19509000000">19s 509ms</td>
+              <td class="duration" data-value="3901800000">3s 901ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepdefs.HomePageSteps.i_open_register_page()</td>
+              <td>5</td>
+              <td class="duration" data-value="3036000000">3s 036ms</td>
+              <td class="duration" data-value="607200000">607ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepdefs.IncorporateSelectorPageSteps.i_click_to_registered_business_continue_button()</td>
+              <td>1</td>
+              <td class="duration" data-value="581000000">581ms</td>
+              <td class="duration" data-value="581000000">581ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepdefs.IncorporateSelectorPageSteps.incorporate_selector_page_is_opened()</td>
+              <td>1</td>
+              <td class="duration" data-value="4869000000">4s 869ms</td>
+              <td class="duration" data-value="4869000000">4s 869ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepdefs.MobileOTPPageSteps.i_input_otp()</td>
+              <td>2</td>
+              <td class="duration" data-value="4499000000">4s 499ms</td>
+              <td class="duration" data-value="2249500000">2s 249ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepdefs.MobileOTPPageSteps.mobile_otp_page_is_opened()</td>
+              <td>1</td>
+              <td class="duration" data-value="4079000000">4s 079ms</td>
+              <td class="duration" data-value="4079000000">4s 079ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepdefs.PersonalDetailsPageSteps.i_choose_date_of_birth()</td>
+              <td>1</td>
+              <td class="duration" data-value="1509000000">1s 509ms</td>
+              <td class="duration" data-value="1509000000">1s 509ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepdefs.PersonalDetailsPageSteps.i_choose_gender_ddl_is_male(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="15754000000">15s 754ms</td>
+              <td class="duration" data-value="15754000000">15s 754ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepdefs.PersonalDetailsPageSteps.i_choose_interested_products()</td>
+              <td>1</td>
+              <td class="duration" data-value="1286000000">1s 286ms</td>
+              <td class="duration" data-value="1286000000">1s 286ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepdefs.PersonalDetailsPageSteps.i_choose_nationality_ddl_is(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="16062000000">16s 062ms</td>
+              <td class="duration" data-value="16062000000">16s 062ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepdefs.PersonalDetailsPageSteps.i_click_submit_person_details_button()</td>
+              <td>1</td>
+              <td class="duration" data-value="641000000">641ms</td>
+              <td class="duration" data-value="641000000">641ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepdefs.PersonalDetailsPageSteps.i_click_to_get_started_button_in_person_details()</td>
+              <td>1</td>
+              <td class="duration" data-value="624000000">624ms</td>
+              <td class="duration" data-value="624000000">624ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepdefs.PersonalDetailsPageSteps.personal_details_page_is_opened()</td>
+              <td>1</td>
+              <td class="duration" data-value="573000000">573ms</td>
+              <td class="duration" data-value="573000000">573ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepdefs.RegisterCompletePageSteps.i_click_to_continue_button_in_complete_page()</td>
+              <td>1</td>
+              <td class="duration" data-value="587000000">587ms</td>
+              <td class="duration" data-value="587000000">587ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepdefs.RegisterCompletePageSteps.i_should_see_register_complete_page_is_opened()</td>
+              <td>1</td>
+              <td class="duration" data-value="3210000000">3s 210ms</td>
+              <td class="duration" data-value="3210000000">3s 210ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepdefs.RegisterPageSteps.i_click_continue_btn()</td>
+              <td>1</td>
+              <td class="duration" data-value="643000000">643ms</td>
+              <td class="duration" data-value="643000000">643ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepdefs.RegisterPageSteps.i_fill_register_form()</td>
+              <td>1</td>
+              <td class="duration" data-value="2939000000">2s 939ms</td>
+              <td class="duration" data-value="2939000000">2s 939ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepdefs.RegisterPageSteps.i_input_txtbx_with_something(java.lang.String,java.lang.String)</td>
+              <td>3</td>
+              <td class="duration" data-value="2574000000">2s 574ms</td>
+              <td class="duration" data-value="858000000">858ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepdefs.RegisterPageSteps.i_should_see_continue_button_is_disabled()</td>
+              <td>1</td>
+              <td class="duration" data-value="230000000">230ms</td>
+              <td class="duration" data-value="230000000">230ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepdefs.RegisterPageSteps.i_should_see_txtbx_error_something(java.lang.String,java.lang.String)</td>
+              <td>3</td>
+              <td class="duration" data-value="1750000000">1s 750ms</td>
+              <td class="duration" data-value="583333333">583ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepdefs.RegisterSelectMethodPageSteps.i_click_to_standard_registration_get_started_button()</td>
+              <td>1</td>
+              <td class="duration" data-value="628000000">628ms</td>
+              <td class="duration" data-value="628000000">628ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepdefs.RegisterSelectMethodPageSteps.register_select_method_page_is_opened()</td>
+              <td>1</td>
+              <td class="duration" data-value="3680000000">3s 680ms</td>
+              <td class="duration" data-value="3680000000">3s 680ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                  </tbody>
+
+        <tfoot class="total">
+          <tr>
+            <td>30</td>
+            <td>43</td>
+            <td class="duration">1m 37s 469ms</td>
+            <td class="duration">2s 266ms</td>
+            <td>Totals</td>
+          </tr>
+        </tfoot>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>
